@@ -16,6 +16,8 @@ Otomatisasi proses mining BitTycoon menggunakan banyak akun, proxy, dan referal 
 
 ---
 
+## Link Garapan : 
+
 ## 📂 Struktur Project
 
 ```
@@ -47,7 +49,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧾 Format File
+## 🧾 Format File : https://play.google.com/store/apps/details?id=com.gomining.tycoonlite&hl=id
 
 ### `proxies.txt` (opsional)
 Format:

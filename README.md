@@ -1,67 +1,112 @@
-# App-BitTycoon-mining Auto Reff
 
+# 🪙 BitTycoon Miner Automation (Proxy Ready)
 
-# Bot Otomatis Bit-Tycoon
+Otomatisasi proses mining BitTycoon menggunakan banyak akun, proxy, dan referal otomatis.
 
-Skrip ini adalah bot sederhana untuk melakukan otomatisasi tugas-tugas pada platform Bit-Tycoon, seperti pendaftaran, memasukkan kode referral, dan menyelesaikan tugas harian.
+> ⚠️ Gunakan dengan bijak! Tool ini dibuat untuk edukasi dan automasi. 
+---
 
-**Disclaimer:** Harap gunakan skrip ini dengan bijak. Segala risiko yang timbul dari penggunaan skrip ini menjadi tanggung jawab pengguna sepenuhnya.
+## ✨ Fitur
+
+- ✅ Multi akun mining otomatis
+- 🌐 Proxy support (HTTP/SOCKS) → gunakan `proxies.txt`
+- 🔁 Auto loop mining (opsional)
+- 💡 Dukungan referal otomatis dari `code-reff.txt`
+- 📜 Log dan retry otomatis
 
 ---
 
-## ## Fitur
--   Otomatisasi pendaftaran akun baru.
--   Input kode referral secara otomatis dari file `code-reff.txt`.
--   Menyelesaikan tugas harian (Daily Contract & Ads).
--   Dapat berjalan tanpa henti untuk membuat banyak akun.
+## 📂 Struktur Project
+
+```
+📁 BitTycoon-Proxy/
+├── main.py                ← Script utama automasi mining
+├── token.txt              ← Token akun BitTycoon (1 per baris)
+├── proxies.txt            ← Daftar proxy (opsional)
+├── code-reff.txt          ← Kode referal (opsional)
+├── requirements.txt       ← Daftar dependencies Python
+```
 
 ---
 
-## ## Cara Instalasi dan Menjalankan
+## 🔧 Instalasi
 
-Ikuti panduan di bawah ini sesuai dengan sistem operasi yang Anda gunakan.
-
-### ### 🖥️ Untuk Pengguna Windows
-
-**1. Persiapan Awal**
-
-Anda harus menginstal Python dan Git terlebih dahulu jika belum ada di PC Anda.
-
--   **Install Python:** Unduh dari [python.org](https://www.python.org/downloads/). **Penting:** Saat instalasi, pastikan Anda mencentang kotak "Add Python to PATH".
--   **Install Git:** Unduh dari [git-scm.com](https://git-scm.com/download/win).
-
-**2. Instalasi Skrip**
-
-Buka **Command Prompt** atau **PowerShell** dan jalankan perintah berikut satu per satu.
-
+### Di PC / VPS:
 ```bash
-# Pindah ke direktori yang Anda inginkan (misal: Desktop)
-cd Desktop
-
-# Clone repositori dari GitHub (ganti dengan URL repo Anda)
-git clone https://github.com/MendhozaJimkhakho/App-BitTycoon-mining
-
-# Masuk ke direktori hasil clone
-cd App-BitTycoon-mining
-
-# Install semua pustaka yang dibutuhkan
+git clone https://github.com/MendhozaJimkhakho/App-BitTycoon-mining.git
+cd App-BitTycoon-mining/BitTycoon-Proxy
 pip install -r requirements.txt
+```
 
-### 📱 Untuk Pengguna Termux
-
-pkg update && pkg upgrade -y
-
-# Install git dan python jika belum ada
-pkg install git python -y
-
-# Clone repositori dari GitHub (ganti dengan URL repo Anda)
-git clone https://github.com/MendhozaJimkhakho/App-BitTycoon-mining
-
-# Masuk ke direktori hasil clone
-cd App-BitTycoon-mining
-
-# Install dependensi yang diperlukan untuk kompilasi 'cryptography'
-pkg install clang python-dev libffi-dev openssl-dev -y
-
-# Install semua pustaka Python yang dibutuhkan dari requirements.txt
+### Di Termux (Android):
+```bash
+pkg update && pkg install python git -y
+git clone https://github.com/MendhozaJimkhakho/App-BitTycoon-mining.git
+cd App-BitTycoon-mining/BitTycoon-Proxy
 pip install -r requirements.txt
+```
+
+---
+
+## 🧾 Format File
+
+### `proxies.txt` (opsional)
+Format:
+```
+http://user:password@ip:port
+socks5://user:password@ip:port
+```
+
+Contoh dari file kamu:
+```text
+http://user:password@ip:port
+```
+
+### `code-reff.txt` (opsional)
+Isi kode referral kamu agar akun mining otomatis terdaftar dengan referral:
+```text
+code reff kamu
+```
+
+---
+
+## ▶️ Cara Menjalankan
+
+### Mode normal (tanpa proxy):
+```bash
+python main.py
+```
+
+### Mode dengan proxy:
+```bash
+python main.py --use-proxy
+```
+
+### Jalankan loop terus-menerus:
+```bash
+python main.py --loop
+```
+
+### Kombinasi semua:
+```bash
+python main.py --use-proxy --loop
+```
+
+---
+
+## 📌 Tips
+
+- Jangan gunakan akun utama untuk testing
+- Gunakan proxy berbeda per akun untuk mencegah banned
+- Jalankan di VPS atau Termux dengan `--loop` untuk auto mining 24/7
+
+---
+
+## 🙋 Kontak
+
+Jika kamu punya pertanyaan atau ingin membeli akses lebih lanjut, hubungi:
+
+📩 Telegram: [@agisalio](https://t.me/agisalio)
+📣 Grup Diskusi: [t.me/airdrop888backup](https://t.me/airdrop888backup)
+
+---

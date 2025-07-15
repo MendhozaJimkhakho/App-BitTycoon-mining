@@ -42,7 +42,7 @@ cd Desktop
 git clone https://github.com/MendhozaJimkhakho/App-BitTycoon-mining
 
 # Masuk ke direktori hasil clone
-cd NAMA_REPO
+cd App-BitTycoon-mining
 
 # Install semua pustaka yang dibutuhkan
 pip install -r requirements.txt
@@ -55,10 +55,10 @@ pkg update && pkg upgrade -y
 pkg install git python -y
 
 # Clone repositori dari GitHub (ganti dengan URL repo Anda)
-git clone [https://github.com/NAMA_PENGGUNA/NAMA_REPO.git](https://github.com/NAMA_PENGGUNA/NAMA_REPO.git)
+git clone https://github.com/MendhozaJimkhakho/App-BitTycoon-mining
 
 # Masuk ke direktori hasil clone
-cd NAMA_REPO
+cd App-BitTycoon-mining
 
 # Install dependensi yang diperlukan untuk kompilasi 'cryptography'
 pkg install clang python-dev libffi-dev openssl-dev -y

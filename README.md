@@ -73,25 +73,9 @@ code reff kamu
 
 ### Mode normal (tanpa proxy):
 ```bash
-python main.py
+python pc.py --> untuk Khusus PC
+python termux.py --> untuk Khusus TERMUX
 ```
-
-### Mode dengan proxy:
-```bash
-python main.py --use-proxy
-```
-
-### Jalankan loop terus-menerus:
-```bash
-python main.py --loop
-```
-
-### Kombinasi semua:
-```bash
-python main.py --use-proxy --loop
-```
-
----
 
 ## 📌 Tips
 

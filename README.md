@@ -39,7 +39,7 @@ Buka **Command Prompt** atau **PowerShell** dan jalankan perintah berikut satu p
 cd Desktop
 
 # Clone repositori dari GitHub (ganti dengan URL repo Anda)
-git clone [https://github.com/NAMA_PENGGUNA/NAMA_REPO.git](https://github.com/NAMA_PENGGUNA/NAMA_REPO.git)
+git clone [https://github.com/MendhozaJimkhakho/App-BitTycoon-mining.git](https://github.com/MendhozaJimkhakho/App-BitTycoon-mining.git)
 
 # Masuk ke direktori hasil clone
 cd NAMA_REPO

@@ -34,15 +34,14 @@ Otomatisasi proses mining BitTycoon menggunakan banyak akun, proxy, dan referal 
 ### Di PC / VPS:
 ```bash
 git clone https://github.com/MendhozaJimkhakho/App-BitTycoon-mining.git
-cd App-BitTycoon-mining/BitTycoon-Proxy
-pip install -r requirements.txt
+cd App-BitTycoon-mining/BitTycoon
 ```
 
 ### Di Termux (Android):
 ```bash
 pkg update && pkg install python git -y
 git clone https://github.com/MendhozaJimkhakho/App-BitTycoon-mining.git
-cd App-BitTycoon-mining/BitTycoon-Proxy
+cd App-BitTycoon-mining/BitTycoon
 pip install -r requirements.txt
 ```
 
@@ -62,7 +61,7 @@ Contoh dari file kamu:
 http://user:password@ip:port
 ```
 
-### `code-reff.txt` (opsional)
+### `code-reff.txt`
 Isi kode referral kamu agar akun mining otomatis terdaftar dengan referral:
 ```text
 code reff kamu

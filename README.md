@@ -22,8 +22,8 @@ Otomatisasi proses mining BitTycoon menggunakan banyak akun, proxy, dan referal 
 
 ```
 📁 BitTycoon-Proxy/
-├── main.py                ← Script utama automasi mining
-├── token.txt              ← Token akun BitTycoon (1 per baris)
+├── pc.py                ← Script utama automasi mining
+├── termux.py                ← Script utama automasi mining
 ├── proxies.txt            ← Daftar proxy (opsional)
 ├── code-reff.txt          ← Kode referal (opsional)
 ├── requirements.txt       ← Daftar dependencies Python

@@ -47,4 +47,21 @@ cd NAMA_REPO
 # Install semua pustaka yang dibutuhkan
 pip install -r requirements.txt
 
+### 📱 Untuk Pengguna Termux
 
+pkg update && pkg upgrade -y
+
+# Install git dan python jika belum ada
+pkg install git python -y
+
+# Clone repositori dari GitHub (ganti dengan URL repo Anda)
+git clone [https://github.com/NAMA_PENGGUNA/NAMA_REPO.git](https://github.com/NAMA_PENGGUNA/NAMA_REPO.git)
+
+# Masuk ke direktori hasil clone
+cd NAMA_REPO
+
+# Install dependensi yang diperlukan untuk kompilasi 'cryptography'
+pkg install clang python-dev libffi-dev openssl-dev -y
+
+# Install semua pustaka Python yang dibutuhkan dari requirements.txt
+pip install -r requirements.txt
